@@ -1,0 +1,34 @@
+git merge
+    "Even though Sally’s new commits have been fetched to your local copy of the Git project", those "commits are on the origin/master branch". Your local master branch has not been updated yet, so "you can’t view or make changes to any of the work she has added".
+
+    In Lesson III, Git Branching we learned how to merge branches. Now we’ll use the git merge command to integrate origin/master into your local master branch. The command:
+        git merge origin/master
+    
+    will accomplish this for us.
+
+Instructions
+    1.
+    Enter this command:
+        cd my-quizzes
+    
+    to go into the my-quizzes directory.
+
+    2.
+    You are on your local master branch. In your commit history, the commit message of the HEAD commit is:
+        Add first question to Physics     quiz 
+    
+    From the terminal, merge with origin/master, where Sally’s most recent commits are.
+
+    Notice the output:
+        Updating a2ba090..bc87a1a
+        Fast-forward
+        biology.txt | 2 +-
+        1 file changed, 1 insertion(+), 1 deletion(-)
+        
+        - Git has performed a “fast-forward” merge, bringing your local master branch up to speed with Sally’s most recent commit on the remote.
+
+    3.
+    Print the commit history.
+
+    In the output, notice that the HEAD commit has changed. The commit message now reads:
+        Add heading and comment to biology quiz 
